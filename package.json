@@ -1,9 +1,21 @@
 {
     "name": "cheerio-template",
+    "description": "Cheerio Template engine for Express ",
     "version": "0.0.1",
-    "private": "true",
+    "main": "index.js",
+    "author": {
+        "name": "Alex Rodin",
+        "email": "contato@alexrodin.info"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nidorx/cheerio-template.git"
+    },
+    "engines": {
+        "node": "*"
+    },
     "dependencies": {
-        "contextify":"*",
+        "contextify": "*",
         "cheerio": "*",
         "step": "*"
     }
