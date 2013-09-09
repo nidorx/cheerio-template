@@ -1,7 +1,7 @@
 {
     "name": "cheerio-template",
     "description": "Cheerio Template engine for Express ",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "main": "index.js",
     "author": {
         "name": "Alex Rodin",
@@ -15,8 +15,8 @@
         "node": "*"
     },
     "dependencies": {
-        "contextify": "*",
-        "cheerio": "*",
-        "step": "*"
+        "contextify": "0.1.x",
+        "cheerio":"0.12.x",
+        "step": "0.0.x"
     }
 }
