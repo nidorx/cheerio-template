@@ -98,8 +98,8 @@ app.get('/route', function(req, res) {
 ```
 #### view.html
 ```html
-<div class="#title"></div>
-<div class="#author-name"></div>
+<div id="#title"></div>
+<div id="#author-name"></div>
 <script type="text/javascript" cheerio-template>
     $('#title').text(data.title);
     $('#author-name').text(data.author.name);
