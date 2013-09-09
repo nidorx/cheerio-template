@@ -5,7 +5,7 @@ var application_root = __dirname,
         path = require('path'),
         routes = require(path.join(application_root, '/routes')),
         http = require('http'),
-        CheerioTemplate = require('../index');
+        CheerioTemplate = require('cheerio-template');
 
 var app = express();
 
