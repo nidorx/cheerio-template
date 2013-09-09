@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cheerio Template</title>
+        <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <script type="cheerio-template-include" include='include/mixins'></script>
+
+        <p>Using mixins</p>
+        <div id="my-select-color">
+        </div>
+        <script type="text/javascript" cheerio-template>
+            $('#my-select-color').html(mixin.formSelect([
+                {
+                    value: 'red',
+                    text: 'Red',
+                    class: 'red'
+                },
+                {
+                    value: 'blue',
+                    text: 'Blue',
+                    class: 'blue'
+                }
+            ]));
+        </script>
+
+
+
+        <script type="cheerio-template-block" block='content'></script>
+        <script type="cheerio-template-block" block='xtras'></script>
+
+         <!--Include extra content -->
+        <script type="cheerio-template-include" include='include/footer'></script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!-- Markup extends -->
+<script type="cheerio-template-extends" extends='layout'></script>
+
+<!-- Block Content -->
+<div cheerio-template-block="content">
+    <p>OTHER page</p>
+
+    <a href="/">Go to index page</a>
+
+    <p>The title was modified, in server side</p>
+    <script type="text/javascript" cheerio-template>
+        $('head title').html(data.title);
+    </script>
+
+
+    <p><strong>This page re-use mixins</strong></p>
+    <label>Select one option</label>
+    <div id="my-select-container">
+    </div>
+    <script type="text/javascript" cheerio-template>
+        $('#my-select-container').html(mixin.formSelect([
+            {
+                value: 2013,
+                text: 'Year 2013',
+                class: 'class-for-option'
+            },
+            {
+                value: 2014,
+                text: 'cup of world 2014',
+                class: 'class-cup-of-world'
+            }
+        ], 'name_for_form_select', 'select_id', 2013, 'select_class'));
+    </script>
+</div>
+
+
+<!-- Block xtras -->
+<div cheerio-template-block="xtras">
+    <p>Extra content page</p>
+</div>
+

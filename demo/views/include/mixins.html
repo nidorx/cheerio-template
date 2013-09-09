@@ -1,0 +1,30 @@
+<div cheerio-template-mixin="formSelect">
+    <div id="content"></div>
+    <script type="text/javascript" mixin="formSelect">
+        var formSelect = function(options, name, id, value, selectClass) {
+            selectClass = selectClass ? selectClass : '';
+            name = name ? name : '';
+            id = id ? id : name;
+            var select = $('<select />', {
+                id: id,
+                name: name,
+                class: selectClass
+            });
+            $('#content').empty();
+            select.append('<option value="">...</option>');
+
+            for (var i in options) {
+                var option = options[i];
+                var selected = (value && value === option.value) ? 'selected' : undefined;
+                var $option = $('<option />');
+                $option.attr('value', option.value);
+                $option.attr('class', option.class);
+                $option.attr('selected', selected);
+                $option.html(option.text);
+                select.append($option);
+            }
+            $('#content').append(select);
+            return $('#content').html();
+        };
+    </script>
+</div>

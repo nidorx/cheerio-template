@@ -1,0 +1,30 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+footer {
+    margin-top: 0;
+    padding: 10px 20px;
+    border-top: 3px solid #46C82D;
+}
+
+.blue{
+    background-color: blue;
+    color: yellow;
+}
+
+.red{
+    background-color: red;
+    color: white;
+}
