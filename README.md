@@ -1,12 +1,26 @@
 cheerio-template
 ==================
 
-## Installation
+Express template engine, based on [cheerio](https://github.com/MatthewMueller/cheerio) inspired by
+[express-notemplat](https://github.com/kapouer/express-notemplate).
 
+Allows the use of jQuery syntax in views of your application.
+
+
+## Installation
 `npm install cheerio-template`
 
 ## Usage
-See demo app.
+
+### Demo
+
+```shell
+cd ./demo
+npm install
+node ./app.js
+```
+
+Enjoy in browser, http://localhost:3000
 
 ### Express 3 Setup
 ```js
@@ -99,7 +113,7 @@ app.get('/route', function(req, res) {
 ```html
 <div cheerio-template-mixin="formSelect">
     <div id="content"></div>
-    <script type="text/javascript" mixin="select">
+    <script type="text/javascript" mixin="formSelect">
         var formSelect = function(options, name, id, value, selectClass) {
             selectClass = selectClass ? selectClass : '';
             name = name ? name : '';
