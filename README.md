@@ -2,7 +2,7 @@ cheerio-template
 ==================
 
 Express template engine, based on [cheerio](https://github.com/MatthewMueller/cheerio) inspired by
-[express-notemplat](https://github.com/kapouer/express-notemplate).
+[express-notemplate](https://github.com/kapouer/express-notemplate).
 
 Allows the use of jQuery syntax in views of your application.
 
