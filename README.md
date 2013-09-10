@@ -171,3 +171,10 @@ app.get('/route', function(req, res) {
 <script type="cheerio-template-include" include='include/footer'></script>
 <script type="cheerio-template-include" include='include/copy'></script>
 ```
+
+
+### Echo values
+```html
+<script type="text/javascript" cheerio-template>
+    echo('<p>This text was inserted</p>');
+</script>
