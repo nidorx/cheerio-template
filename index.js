@@ -173,7 +173,7 @@ module.exports = (function() {
                             return done();
                         }
 
-                        mixinSandbox = {
+                        var mixinSandbox = {
                             console: console,
                             data: options,
                             $: $
