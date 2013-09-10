@@ -38,7 +38,14 @@ module.exports = (function() {
                             mixin: {},
                             console: console,
                             data: options,
-                            $: view.$
+                            $: view.$,
+                            __actualScript:null,
+                            //Allow inline print
+                            echo: function(content){
+                                if(view.sandbox.__actualScript){
+                                    view.sandbox.__actualScript.before(content);
+                                }
+                            }
                         };
                         var window = Contextify(view.sandbox);
                         view.sandbox.window = window.getGlobal();
