@@ -178,3 +178,5 @@ app.get('/route', function(req, res) {
 <script type="text/javascript" cheerio-template>
     echo('<p>This text was inserted</p>');
 </script>
+```
+
